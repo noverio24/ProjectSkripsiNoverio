@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".Activity.Register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:shadowColor="@color/white"
+        android:text="Register"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_50sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:background="@drawable/edittext_box"
+        android:hint="Nama Depan...."
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edNama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_110sdp"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:background="@drawable/edittext_box"
+        android:hint="Nama Belakang...."
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/edNama"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edittext_box"
+        android:hint="Masukan NIM...."
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edNama" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edittext_box"
+        android:hint="Masukan Email...."
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edNIM" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edittext_box"
+        android:hint="Masukan Telepon...."
+        android:inputType="number"
+        android:padding="@dimen/_10sdp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edEmail" />
+
+
+    <Button
+        android:id="@+id/eRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_100sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:background="@color/yellow"
+        android:text="@android:string/ok"
+        android:textColor="@android:color/white"
+        android:shadowColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/edTelepon" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
