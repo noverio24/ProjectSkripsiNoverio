@@ -11,13 +11,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_100sdp"
         android:fontFamily="cursive"
         android:shadowColor="@color/white"
         android:text="Register"
         android:textColor="@color/yellow"
         android:textSize="@dimen/_50sdp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/edEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,32 +25,17 @@
 
     <EditText
         android:id="@+id/edNama"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_55sdp"
-        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/edittext_box"
         android:hint="Nama Depan...."
         android:inputType="text"
         android:padding="@dimen/_10sdp"
         android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
-
-    <EditText
-        android:id="@+id/edNama2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_110sdp"
-        android:layout_marginTop="@dimen/_200sdp"
-        android:background="@drawable/edittext_box"
-        android:hint="Nama Belakang...."
-        android:inputType="text"
-        android:padding="@dimen/_10sdp"
-        android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="@id/edNama"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edNIM"
@@ -87,8 +72,8 @@
         android:layout_marginHorizontal="@dimen/_55sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:background="@drawable/edittext_box"
-        android:hint="Masukan Telepon...."
-        android:inputType="number"
+        android:hint="Masukan Password...."
+        android:inputType="textPassword"
         android:padding="@dimen/_10sdp"
         android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -102,11 +87,10 @@
         android:layout_marginHorizontal="@dimen/_100sdp"
         android:layout_marginVertical="@dimen/_20sdp"
         android:background="@color/yellow"
+        android:shadowColor="@color/colorPrimary"
         android:text="@android:string/ok"
         android:textColor="@android:color/white"
-        android:shadowColor="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@id/edTelepon" />
-
+        app:layout_constraintTop_toBottomOf="@id/edPassword" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
