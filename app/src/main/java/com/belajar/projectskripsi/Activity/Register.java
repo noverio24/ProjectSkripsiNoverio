@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class Register extends AppCompatActivity {
-    EditText eFrontName, eBackName, eNim, eEmail, ePassword;
+    EditText eName, eNim, eEmail, ePassword;
     Button eRegisterBtn;
     TextView eLoginBtn;
 
@@ -37,7 +37,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        eFrontName = findViewById(R.id.edNama);
+        eName = findViewById(R.id.edNama);
         eNim = findViewById(R.id.edNIM);
         eEmail = findViewById(R.id.edEmail);
         ePassword = findViewById(R.id.edPassword);
@@ -86,7 +86,7 @@ public class Register extends AppCompatActivity {
                             FirebaseUser user = fAuth.getCurrentUser();
 
                             UserProfileChangeRequest profileChangeRequest = new UserProfileChangeRequest.Builder()
-                                    .setDisplayName(eFrontName.getText().toString())
+                                    .setDisplayName(eName.getText().toString())
                                     .build();
 
 //                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
